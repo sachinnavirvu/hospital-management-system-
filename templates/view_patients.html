@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>View Patients</title>
+  </head>
+  <body>
+    <h2>Patients List</h2>
+    <ul>
+      {% for patient in patients %}
+      <li>{{ patient.id }} - {{ patient.name }} (Age: {{ patient.age }})</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
